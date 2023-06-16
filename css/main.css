@@ -147,7 +147,7 @@ body {
 
 .header {
   display: grid;
-  gap: 61px;
+  gap: 40px;
   padding-top: 20px;
   padding-bottom: 64px;
   background: linear-gradient(296.95deg, rgba(255, 255, 255, 0.5) 15.52%, rgba(233, 241, 255, 0.5) 95.06%);
