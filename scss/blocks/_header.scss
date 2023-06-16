@@ -1,0 +1,61 @@
+.header {
+   padding-top: 20px;
+   padding-bottom: 64px;
+   background: linear-gradient(
+      296.95deg,
+      rgba(255, 255, 255, 0.5) 15.52%,
+      rgba(233, 241, 255, 0.5) 95.06%
+   );
+}
+
+.header__top-row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   column-gap: 20px;
+}
+
+.header__logo {
+   flex-shrink: 0;
+}
+
+.header__nav-list {
+   display: flex;
+   column-gap: 24px;
+   font-size: 14px;
+   line-height: 1.5;
+}
+
+.header__nav-link {
+   transition: color 0.2s ease-in;
+}
+
+.header__nav-link:hover {
+   color: #1f50fe;
+}
+
+.header__nav-link--active {
+   font-weight: 700;
+
+   background: #d9e2ff;
+   border-radius: 60px;
+   padding: 13px 10px;
+}
+
+.header__nav-link--active {
+}
+
+.header__call-request {
+   display: flex;
+   flex-direction: column;
+}
+
+.header__phone-number {
+}
+
+.header__text-request {
+}
+
+.header__web-link {
+}
