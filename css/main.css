@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: SfProDisplay;
   font-weight: 400;
@@ -137,16 +138,30 @@ body {
   max-width: 1280px;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+  color: #1f50fe;
+}
+
 .header {
+  display: grid;
+  gap: 61px;
   padding-top: 20px;
   padding-bottom: 64px;
   background: linear-gradient(296.95deg, rgba(255, 255, 255, 0.5) 15.52%, rgba(233, 241, 255, 0.5) 95.06%);
+}
+
+.header--bor-bot {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .header__top-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 21px;
   width: 100%;
   -moz-column-gap: 20px;
        column-gap: 20px;
@@ -180,6 +195,66 @@ body {
 }
 
 .header__call-request {
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  padding-left: 28px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.header__call-request::before {
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(./../img/header/phone-icon.svg);
+}
+
+.header__phone-number {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.header__text-request {
+  color: #1f50fe;
+}
+
+.header__web-link {
+  display: flex;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.header__desk-text p + p {
+  margin-top: 27px;
+}
+
+.header__desk {
+  display: grid;
+  gap: 24px;
+  max-width: 600px;
+}
+
+.header__text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.header__text p + p {
+  margin-top: 27px;
+}
+
+.header__сert {
+  display: flex;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
 }/*# sourceMappingURL=main.css.map */
