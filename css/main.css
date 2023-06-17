@@ -149,7 +149,7 @@ body {
   display: grid;
   gap: 40px;
   padding-top: 20px;
-  padding-bottom: 64px;
+  padding-bottom: 124px;
   background: linear-gradient(296.95deg, rgba(255, 255, 255, 0.5) 15.52%, rgba(233, 241, 255, 0.5) 95.06%);
 }
 
@@ -187,11 +187,28 @@ body {
   color: #1f50fe;
 }
 
+.header__nav-list-item {
+  position: relative;
+}
+
 .header__nav-link--active {
   font-weight: 700;
   background: #d9e2ff;
   border-radius: 60px;
   padding: 13px 10px;
+}
+
+.header__nav-link--active::after {
+  position: absolute;
+  bottom: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #1f50fe;
+  border-radius: 50%;
 }
 
 .header__call-request {
@@ -234,6 +251,11 @@ body {
   line-height: 1.5;
 }
 
+.header__middle-row-flex {
+  display: flex;
+  gap: 40px;
+}
+
 .header__desk-text p + p {
   margin-top: 27px;
 }
@@ -257,4 +279,49 @@ body {
   display: flex;
   -moz-column-gap: 35px;
        column-gap: 35px;
+}
+
+.header__cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(187px, 1fr));
+}
+
+.header__card {
+  position: relative;
+  background: #fff;
+  box-shadow: 0px 100px 80px rgba(1, 101, 255, 0.07), 0px 38.5185px 25.4815px rgba(1, 101, 255, 0.0425185), 0px 8.14815px 6.51852px rgba(1, 101, 255, 0.0274815);
+}
+
+.header__card-img {
+  z-index: 9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__card--br-50 {
+  border-radius: 50%;
+}
+
+.header__card--br-bl {
+  border-radius: 0 0 50% 0;
+}
+
+.header__card--bsh-accent {
+  box-shadow: 0px 100px 80px rgba(1, 101, 255, 0.07), 0px 64.8148px 46.8519px rgba(1, 101, 255, 0.0531481), 0px 38.5185px 25.4815px rgba(1, 101, 255, 0.0425185), 0px 20px 13px rgba(1, 101, 255, 0.035), 0px 8.14815px 6.51852px rgba(1, 101, 255, 0.0274815), 0px 1.85185px 3.14815px rgba(1, 101, 255, 0.0168519);
+}
+
+.header__card--zi {
+  z-index: 1;
+}
+
+.services {
+  padding: 56px 0 64px;
+  margin-top: -60px;
+  background: linear-gradient(72.05deg, #e6efff 12.23%, #d9e1ff 50.72%, #cbd2ff 88.67%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 700px;
+  border-radius: 100px 100px 0 0;
 }/*# sourceMappingURL=main.css.map */
