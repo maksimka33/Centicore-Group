@@ -1,0 +1,70 @@
+.outstaffing {
+   background: #fbfbfb;
+   padding: 56px 0 124px;
+   margin-top: -60px;
+   border-radius: 70px 70px 0 0;
+}
+
+.outstaffing__body {
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+}
+
+.outstaffing__text {
+   font-size: 14px;
+   line-height: 1.5;
+}
+
+.outstaffing__wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+
+.outstaffing__item {
+   display: flex;
+   column-gap: 16px;
+   max-width: 320px;
+   padding: 20px 0px;
+}
+
+.outstaffing__item-border {
+   border-left: 2px solid #b7b7b7;
+}
+
+.outstaffing__item-img {
+   flex-shrink: 0;
+   width: 80px;
+   height: 80px;
+   padding: 21px;
+   background: #f1f1f1;
+   border-radius: 50%;
+   border: 1px solid #b7b7b7;
+   filter: drop-shadow(0px 100px 80px rgba(1, 101, 255, 0.07))
+      drop-shadow(0px 38.5185px 25.4815px rgba(1, 101, 255, 0.0425185))
+      drop-shadow(0px 8.14815px 6.51852px rgba(1, 101, 255, 0.0274815));
+}
+
+.outstaffing__item-desk {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.outstaffing__item-title {
+   font-weight: 700;
+   font-size: 18px;
+}
+
+.outstaffing__item-text {
+   font-size: 12px;
+   line-height: 1.5;
+}
+
+.outstaffing__btn {
+   text-align: center;
+}
+
+.outstaffing__button {
+   padding: 13px 69px;
+}

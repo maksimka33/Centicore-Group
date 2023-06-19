@@ -1,0 +1,88 @@
+.expertise {
+   padding: 56px 0 124px;
+   margin-top: -60px;
+
+   background: linear-gradient(67.66deg, #1f50fe 17%, #899aff 108.07%);
+   border-radius: 70px 70px 0 0;
+}
+
+.expertise__header {
+   margin-bottom: 48px;
+   color: $white;
+}
+
+.expertise__cards {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+   justify-content: center;
+}
+
+.expertise__card {
+   width: 233px;
+   height: 151px;
+   padding: 20px 12px 20px 20px;
+   background: rgba(255, 255, 255, 0.1);
+   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03),
+      0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778),
+      0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222),
+      0px 20px 13px rgba(0, 0, 0, 0.015),
+      0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778),
+      0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+   transition: background 0.3s ease-in;
+}
+
+.expertise__card--br-bot-right {
+   border-radius: 0px 0px 40px 0px;
+}
+
+.expertise__card--br-top-left {
+   border-radius: 40px 40px 0px 40px;
+}
+
+.expertise__card--br-right {
+   border-radius: 0px 40px 40px 0px;
+}
+
+.expertise__card--br-top-right {
+   border-radius: 40px 40px 40px 0px;
+}
+
+.expertise__card--br-bot-left-top-right {
+   border-radius: 0px 40px 0px 40px;
+}
+
+.expertise__card--br-t-left {
+   border-radius: 40px 0px 0px 0px;
+}
+
+// .expertise__card--br-top-right {
+//    border-radius: 0px 40px 0px 0px;
+// }
+
+.expertise__card:hover {
+   background: $white;
+}
+
+.expertise__card:hover .expertise__card-icon {
+   fill: #d01c28;
+}
+
+.expertise__card:hover .expertise__card-text {
+   color: $accent;
+}
+
+.expertise__card-icon {
+   margin-bottom: 16px;
+   fill: $white;
+   transition: fill 0.3s ease-in;
+}
+
+.expertise__card-text {
+   max-width: 201px;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 1.16;
+   color: $white;
+   transition: color 0.3s ease-in;
+}
