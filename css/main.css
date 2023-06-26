@@ -661,10 +661,11 @@ body {
 
 .outstaffing__button {
   padding: 13px 69px;
+  border: 1px solid #1f50fe;
 }
 
 .development {
-  padding: 56px 0 64px;
+  padding: 56px 0 124px;
   margin-top: -60px;
   border-radius: 70px 70px 0 0;
   background: linear-gradient(89.37deg, #eff1f4 0.54%, #fdfafa 46.55%, #fff5f6 99.5%);
@@ -718,4 +719,273 @@ body {
 .development__item-text {
   font-size: 12px;
   line-height: 1.5;
+}
+
+.solutions {
+  padding: 56px 0 122px;
+  margin-top: -60px;
+  border-radius: 70px 70px 0 0;
+  background: linear-gradient(92.49deg, #1a233b 0%, #01278e 185.36%);
+}
+
+.solutions__body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.solutions__header {
+  color: #ffffff;
+}
+
+.solutions__text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.solutions__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.solutions__item {
+  display: flex;
+  padding: 24px 40px;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+  border-radius: 25px;
+  width: 100%;
+}
+
+.solutions__item + .solutions__item {
+  margin-top: -38px;
+}
+
+.solutions__item--top {
+  gap: 166px;
+  background: #d8ddff;
+  height: 122px;
+}
+
+.solutions__item--middle {
+  max-width: 1160px;
+  gap: 236px;
+  background: #e9ecff;
+  height: 122px;
+}
+
+.solutions__item--bottom {
+  max-width: 1120px;
+  gap: 236px;
+  background: #ffffff;
+  height: 110px;
+}
+
+.solutions__item-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.solutions__item-text {
+  max-width: 440px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.solutions__btn {
+  margin-top: 14px;
+  text-align: right;
+}
+
+.solutions__button {
+  padding: 16px 65px 11px;
+  border: 1px solid #1f50fe;
+  border-radius: 40px;
+}
+
+.ready {
+  padding: 56px 0px 122px;
+  margin-top: -60px;
+  border-radius: 70px 70px 0 0;
+  background: #fbfbfb;
+}
+
+.ready__body {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+
+.ready__row {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 44px;
+}
+
+.ready__row::after {
+  position: absolute;
+  bottom: -62px;
+  left: calc(50% + 70px);
+  content: "";
+  display: block;
+  width: 610px;
+  height: 520px;
+  background-image: url(./../img/ready/big-circle.svg);
+  background-size: initial;
+}
+
+.ready__row::before {
+  position: absolute;
+  bottom: -62px;
+  right: 70%;
+  content: "";
+  display: block;
+  width: 610px;
+  height: 150px;
+  background-image: url(./../img/ready/little-circle.svg);
+  background-size: initial;
+}
+
+.ready__row-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  row-gap: 40px;
+}
+
+.ready__row-list-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.ready__row-list-item:not(.ready__row-list-item--acctive):hover {
+  font-size: 16px;
+  color: #1f50fe;
+  fill: #1f50fe;
+}
+
+.ready__row-list-item--acctive {
+  font-weight: 700;
+  font-size: 20px;
+  fill: #1f50fe;
+}
+.ready__row-list-item--acctive svg {
+  transform: scale(1.2);
+}
+
+.ready__row-wrapper {
+  min-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 24px;
+  border: 2px solid #1f50fe;
+  border-radius: 0px 40px 40px;
+  z-index: 1;
+}
+
+.ready__row-wrapper-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.ready__row-wrapper-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.ready__row-text {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.partners {
+  padding: 56px 0px 80px;
+  margin-top: -60px;
+  border-radius: 70px 70px 0 0;
+  background: linear-gradient(270deg, #e6efff 0%, #d9e1ff 50%, #cbd2ff 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.partners__body {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.partners__slider {
+  position: relative;
+}
+
+.partners__item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #cfcfcf;
+}
+
+/* Ограничивающая оболочка */
+.partners__slider .slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.partners__slider .slick-track {
+  display: flex;
+}
+
+/* Стрелка */
+.partners__slider .slick-arrow {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  border: 1px solid #cfcfcf;
+  transition: all 0.2s ease-in;
+  font-size: 0px;
+  z-index: 1;
+}
+
+.partners__slider .slick-arrow:hover {
+  background: #1f50fe;
+}
+
+/* Стрелка влево */
+.partners__slider .slick-arrow.slick-prev {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='15' viewBox='0 0 10 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9.84615 0V14.7692L0 7.38462L9.84615 0Z' fill='%23CFCFCF'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.partners__slider .slick-arrow.slick-prev:hover {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='15' viewBox='0 0 10 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9.84615 0V14.7692L0 7.38462L9.84615 0Z' fill='%23FFFFFF'/%3e%3c/svg%3e ");
+}
+
+/* Стрелка вправо */
+.partners__slider .slick-arrow.slick-next {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='15' viewBox='0 0 10 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M3.71933e-05 0V14.7692L9.84619 7.38462L3.71933e-05 0Z' fill='%23CFCFCF'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 80px;
+}
+
+.partners__slider .slick-arrow.slick-next:hover {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='15' viewBox='0 0 10 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M3.71933e-05 0V14.7692L9.84619 7.38462L3.71933e-05 0Z' fill='%23FFFFFF'/%3e%3c/svg%3e ");
 }/*# sourceMappingURL=main.css.map */

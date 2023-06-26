@@ -1,0 +1,29 @@
+.partners {
+   padding: 56px 0px 80px;
+   margin-top: -60px;
+   border-radius: 70px 70px 0 0;
+   background: linear-gradient(270deg, #e6efff 0%, #d9e1ff 50%, #cbd2ff 100%);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.partners__body {
+   display: flex;
+   flex-direction: column;
+   gap: 38px;
+}
+
+.partners__slider {
+   position: relative;
+}
+
+.partners__item-img {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 120px;
+   height: 120px;
+   background: #ffffff;
+   border-radius: 50%;
+   border: 1px solid #cfcfcf;
+}

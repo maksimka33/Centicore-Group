@@ -1,0 +1,56 @@
+/* Ограничивающая оболочка */
+.partners__slider .slick-list {
+   overflow: hidden;
+}
+
+/* Лента слайдов */
+.partners__slider .slick-track {
+   display: flex;
+}
+
+/* Стрелка */
+.partners__slider .slick-arrow {
+   position: absolute;
+   top: 0;
+   right: 0px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 40px;
+   height: 40px;
+
+   background: #f1f1f1;
+   border-radius: 50%;
+   border: 1px solid #cfcfcf;
+
+   transition: all 0.2s ease-in;
+   font-size: 0px;
+   z-index: 1;
+}
+
+.partners__slider .slick-arrow:hover {
+   background: #1f50fe;
+}
+/* Стрелка влево */
+.partners__slider .slick-arrow.slick-prev {
+   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='15' viewBox='0 0 10 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9.84615 0V14.7692L0 7.38462L9.84615 0Z' fill='%23CFCFCF'/%3e%3c/svg%3e ");
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.partners__slider .slick-arrow.slick-prev:hover {
+   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='15' viewBox='0 0 10 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9.84615 0V14.7692L0 7.38462L9.84615 0Z' fill='%23FFFFFF'/%3e%3c/svg%3e ");
+}
+/* Стрелка вправо */
+.partners__slider .slick-arrow.slick-next {
+   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='15' viewBox='0 0 10 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M3.71933e-05 0V14.7692L9.84619 7.38462L3.71933e-05 0Z' fill='%23CFCFCF'/%3e%3c/svg%3e ");
+   background-repeat: no-repeat;
+   background-position: center;
+   margin-top: 80px;
+}
+
+.partners__slider .slick-arrow.slick-next:hover {
+   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='15' viewBox='0 0 10 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M3.71933e-05 0V14.7692L9.84619 7.38462L3.71933e-05 0Z' fill='%23FFFFFF'/%3e%3c/svg%3e ");
+}
