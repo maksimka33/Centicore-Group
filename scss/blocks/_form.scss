@@ -1,0 +1,123 @@
+.form__total {
+   color: #ffffff;
+   position: absolute;
+   padding: 56px 40px 64px;
+
+   height: 100%;
+   left: calc(50% + 100px);
+   right: 0;
+   top: 0;
+   border-radius: 0px 70px 0 0;
+
+   background: #1a233b;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+//================================================================
+.form {
+   position: relative;
+
+   padding: 56px 0px 64px;
+   margin-top: -60px;
+   border-radius: 70px 70px 0 0;
+   // background: linear-gradient(to right, #ffffff 58%, #1a233b 42%);
+   background: #ffffff;
+   font-size: 12px;
+}
+
+.form__options {
+   max-width: 700px;
+   margin-right: auto;
+}
+
+.form__header {
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+   margin-bottom: 24px;
+}
+
+.form__header-subtitle {
+   font-size: 14px;
+   line-height: 1.5;
+}
+
+.form__group-wrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+
+.form__group-title {
+   font-size: 16px;
+   font-weight: 700;
+   margin-bottom: 16px;
+}
+
+.radio-wraper {
+   display: flex;
+   gap: 40px;
+}
+
+.radio-item {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.real-radio {
+   width: 0;
+   height: 0;
+   position: absolute;
+   opacity: 0;
+   z-index: -1;
+}
+
+.custom__radio {
+   position: relative;
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+
+   border: 2px solid #00000099;
+   border-radius: 50%;
+   transition: border 0.2s ease-in;
+}
+
+.custom__radio::before {
+   display: block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0);
+   content: "";
+   width: 10px;
+   height: 10px;
+   background: #1f50fe;
+   border-radius: 50%;
+   transition: transform 0.2s ease-in;
+}
+
+.real-radio:focus + .custom__radio {
+   border: 2px solid #1f50fe;
+}
+.real-radio:checked + .custom__radio::before {
+   transform: translate(-50%, -50%) scale(1);
+}
+
+// CHECKBOX
+
+.checkbox-row {
+   display: flex;
+   // justify-content: space-between;
+   gap: 56px;
+}
+
+.checkbox-column {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
