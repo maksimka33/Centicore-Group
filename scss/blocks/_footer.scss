@@ -1,0 +1,127 @@
+.footer {
+   position: relative;
+   background: #0e1423;
+   padding: 56px 0px 0px;
+   margin-top: -60px;
+   border-radius: 70px 70px 0 0;
+   color: $white;
+}
+
+.footer__top {
+   padding-bottom: 46px;
+}
+
+.footer__logo {
+   margin-bottom: 32px;
+}
+
+.footer__header {
+   margin-bottom: 24px;
+}
+
+.footer__offices {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 32px;
+}
+
+.footer__offices-item {
+   padding: 24px 0px;
+}
+
+.footer__offices-title {
+   display: block;
+   margin-bottom: 24px;
+   font-size: 18px;
+   font-weight: 700;
+   letter-spacing: 0.72px;
+   text-transform: uppercase;
+}
+
+.footer__offices-list {
+   font-size: 12px;
+   letter-spacing: 0.48px;
+   line-height: 1.5;
+}
+
+.footer__offices-item-border {
+   border: 1px solid #b7b7b7;
+}
+
+.footer__social {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+.footer__social-wrapper {
+   display: flex;
+   gap: 29px;
+}
+
+.footer__social-item {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 40px;
+   height: 40px;
+   background: #1f50fe;
+   border-radius: 8px;
+}
+
+.footer__social-item:hover {
+   & .footer__social-item-img {
+      fill-opacity: 1;
+      margin-left: 0px;
+   }
+}
+
+// .footer__social-item::before {
+//    content: "";
+//    position: absolute;
+//    z-index: 6;
+//    top: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 100%;
+//    background: rgba(31, 79, 254, 0.4);
+
+//    border-radius: 8px;
+// }
+
+.footer__social-item-img {
+   display: block;
+   fill-opacity: 0.4;
+   margin-left: 20px;
+   transition: all 0.2s ease-in;
+}
+
+.footer__social-item-img--facebook {
+   margin-left: 25px;
+}
+
+.footer__bottom {
+   padding: 12px 0px;
+   background: #000000;
+   font-size: 10px;
+   font-weight: 500;
+   letter-spacing: 0.4px;
+   color: #ffffff80;
+}
+
+.footer_bottom-list {
+   display: flex;
+   gap: 20px;
+}
+
+.footer__bottom-item--flex {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+.footer__bottom-item--underline {
+   text-decoration-line: underline;
+}
