@@ -19,6 +19,13 @@
    /* background: linear-gradient(209deg, #4287b3 -17.38%, #133f6b 78.4%), #276195; */
    background-color: #ffffff;
    transition: all 0.3s ease-in;
+
+   overflow-y: scroll;
+
+   @media (max-width: 374px) {
+      right: -320px;
+      width: 320px;
+   }
 }
 
 .mobile-nav--open {

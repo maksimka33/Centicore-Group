@@ -49,6 +49,11 @@
       height: auto;
       padding: 16px 8px 16px 16px;
    }
+
+   @media (max-width: 650px) {
+      width: 195px;
+      text-align: center;
+   }
 }
 
 .expertise__card--br-bot-right {

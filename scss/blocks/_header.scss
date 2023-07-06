@@ -225,6 +225,11 @@
       width: 110px;
       height: 110px;
    }
+
+   @media (max-width: 374px) {
+      width: 93px;
+      height: 93px;
+   }
 }
 
 .header__card-img {
