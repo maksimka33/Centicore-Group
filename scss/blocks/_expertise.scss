@@ -4,11 +4,20 @@
 
    background: linear-gradient(67.66deg, #1f50fe 17%, #899aff 108.07%);
    border-radius: 70px 70px 0 0;
+
+   @media (max-width: 650px) {
+      padding: 36px 0 100px;
+      border-radius: 50px 50px 0 0;
+   }
 }
 
 .expertise__header {
    margin-bottom: 48px;
    color: $white;
+
+   @media (max-width: 650px) {
+      gap: 32px;
+   }
 }
 
 .expertise__cards {
@@ -16,6 +25,10 @@
    flex-wrap: wrap;
    gap: 8px;
    justify-content: center;
+
+   @media (max-width: 650px) {
+      gap: 16px;
+   }
 }
 
 .expertise__card {
@@ -30,35 +43,61 @@
       0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778),
       0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
    transition: background 0.3s ease-in;
+
+   @media (max-width: 650px) {
+      width: 155px;
+      height: auto;
+      padding: 16px 8px 16px 16px;
+   }
 }
 
 .expertise__card--br-bot-right {
    border-radius: 0px 0px 40px 0px;
+
+   @media (max-width: 650px) {
+      border-radius: 0px 0px 30px 0px;
+   }
 }
 
 .expertise__card--br-top-left {
    border-radius: 40px 40px 0px 40px;
+
+   @media (max-width: 650px) {
+      border-radius: 30px 30px 0px 30px;
+   }
 }
 
 .expertise__card--br-right {
    border-radius: 0px 40px 40px 0px;
+
+   @media (max-width: 650px) {
+      border-radius: 0px 30px 30px 0px;
+   }
 }
 
 .expertise__card--br-top-right {
    border-radius: 40px 40px 40px 0px;
+
+   @media (max-width: 650px) {
+      border-radius: 30px 30px 30px 0px;
+   }
 }
 
 .expertise__card--br-bot-left-top-right {
    border-radius: 0px 40px 0px 40px;
+
+   @media (max-width: 650px) {
+      border-radius: 0px 30px 0px 30px;
+   }
 }
 
 .expertise__card--br-t-left {
    border-radius: 40px 0px 0px 0px;
-}
 
-// .expertise__card--br-top-right {
-//    border-radius: 0px 40px 0px 0px;
-// }
+   @media (max-width: 650px) {
+      border-radius: 30px 0px 0px 0px;
+   }
+}
 
 .expertise__card:hover {
    background: $white;
@@ -85,4 +124,8 @@
    line-height: 1.16;
    color: $white;
    transition: color 0.3s ease-in;
+
+   @media (max-width: 650px) {
+      font-size: 16px;
+   }
 }

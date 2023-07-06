@@ -1,0 +1,80 @@
+.header__nav-btn {
+   z-index: 999;
+}
+
+.nav-icon-btn {
+   width: 48px;
+   height: 48px;
+   display: -webkit-box;
+   display: flex;
+   -webkit-box-pack: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   align-items: center;
+   background: #d9e2ff;
+   border-radius: 20px;
+   border: none;
+   transition: background 0.2s ease-in;
+   cursor: pointer;
+}
+
+.nav-icon-btn:hover {
+   background: #bcc7eb;
+}
+
+.nav-icon {
+   display: block;
+   position: relative;
+   width: 18px;
+   height: 2px;
+   background-color: #323232;
+   // transition: background-color 0.2s ease-in;
+}
+
+.nav-icon::before,
+.nav-icon::after {
+   content: "";
+   display: block;
+
+   position: absolute;
+   left: 0;
+
+   width: 18px;
+   height: 2px;
+
+   background-color: #323232;
+
+   transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+   // transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+   // transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+   // transition: transform 0.2s ease-in, top 0.2s linear 0.2s,
+   // transition: background-color 0.2s ease-in;
+}
+
+.nav-icon::before {
+   top: -5px;
+}
+
+.nav-icon::after {
+   top: 5px;
+}
+
+/* Active state */
+.nav-icon.nav-icon--active {
+   background-color: transparent;
+}
+
+.nav-icon.nav-icon--active::before,
+.nav-icon.nav-icon--active::after {
+   top: 0;
+   transition: top 0.2s linear, transform 0.1s ease-in 0.2s;
+}
+
+.nav-icon.nav-icon--active::before {
+   transform: rotate(45deg);
+}
+
+.nav-icon.nav-icon--active::after {
+   transform: rotate(-45deg);
+}

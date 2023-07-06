@@ -3,10 +3,18 @@ body {
    background-color: #fff;
 }
 
+.none {
+   display: none !important;
+}
+
 .container {
    margin: 0 auto;
    padding: 0 40px;
    max-width: 1280px;
+
+   @media (max-width: 999px) {
+      padding: 0 20px;
+   }
 }
 
 .title {
@@ -14,12 +22,28 @@ body {
    font-size: 60px;
    line-height: 1.2;
    color: #1f50fe;
+
+   @media (max-width: 1150px) {
+      font-size: 50px;
+   }
+
+   @media (max-width: 650px) {
+      font-size: 40px;
+   }
 }
 
 .title-secondery {
    font-weight: 700;
    font-size: 42px;
    line-height: 1.2;
+
+   @media (max-width: 1000px) {
+      font-size: 34px;
+   }
+
+   @media (max-width: 1000px) {
+      font-size: 24px;
+   }
 }
 
 .button {
