@@ -466,6 +466,9 @@ body {
 }
 
 .nav-icon-btn {
+  position: fixed;
+  right: 20px;
+  top: 17px;
   width: 48px;
   height: 48px;
   display: flex;
@@ -531,7 +534,6 @@ body {
 
 .no-scroll {
   overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
 }
 
 .mobile-nav {
@@ -561,7 +563,7 @@ body {
 
 .mobile-nav__logo {
   padding: 0px 20px;
-  margin-bottom: 29px;
+  margin-bottom: 21px;
 }
 
 .mobile-nav__list {
