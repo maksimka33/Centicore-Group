@@ -173,12 +173,12 @@ body {
   font-size: 42px;
   line-height: 1.2;
 }
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
   .title-secondery {
     font-size: 34px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 650px) {
   .title-secondery {
     font-size: 24px;
   }
@@ -432,8 +432,8 @@ body {
 }
 @media (max-width: 650px) {
   .header__card {
-    width: 113px;
-    height: 113px;
+    width: 110px;
+    height: 110px;
   }
 }
 
@@ -1010,6 +1010,11 @@ body {
   padding: 56px 0px;
   background: linear-gradient(92.49deg, #1a233b 0%, #01278e 185.36%);
 }
+@media (max-width: 999px) {
+  .cta__row {
+    text-align: center;
+  }
+}
 
 .cta__row::after {
   content: "";
@@ -1020,12 +1025,37 @@ body {
   height: 253px;
   background: url(./../img/cta/1c.png);
 }
+@media (max-width: 1180px) {
+  .cta__row::after {
+    display: none;
+  }
+}
 
 .cta__title {
   font-weight: 700;
   font-size: 48px;
   color: #ffffff;
   margin-bottom: 35px;
+}
+@media (max-width: 999px) {
+  .cta__title {
+    font-size: 34px;
+  }
+}
+@media (max-width: 650px) {
+  .cta__title {
+    font-size: 24px;
+  }
+}
+
+.cta__img {
+  display: none;
+}
+@media (max-width: 1180px) {
+  .cta__img {
+    display: block;
+    margin-bottom: 32px;
+  }
 }
 
 .cta__text {
@@ -1035,9 +1065,19 @@ body {
   color: #ffffff;
   margin-bottom: 32px;
 }
+@media (max-width: 999px) {
+  .cta__text {
+    max-width: 100%;
+  }
+}
 
 .cta__button {
   padding: 13px 121px;
+}
+@media (max-width: 999px) {
+  .cta__button {
+    padding: 13px 80px;
+  }
 }
 
 .outstaffing {

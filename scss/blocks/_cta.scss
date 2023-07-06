@@ -12,6 +12,10 @@
    position: relative;
    padding: 56px 0px;
    background: linear-gradient(92.49deg, #1a233b 0%, #01278e 185.36%);
+
+   @media (max-width: 999px) {
+      text-align: center;
+   }
 }
 
 .cta__row::after {
@@ -22,6 +26,10 @@
    width: 381px;
    height: 253px;
    background: url(./../img/cta/1c.png);
+
+   @media (max-width: 1180px) {
+      display: none;
+   }
 }
 
 .cta__title {
@@ -29,6 +37,23 @@
    font-size: 48px;
    color: $white;
    margin-bottom: 35px;
+
+   @media (max-width: 999px) {
+      font-size: 34px;
+   }
+
+   @media (max-width: 650px) {
+      font-size: 24px;
+   }
+}
+
+.cta__img {
+   display: none;
+
+   @media (max-width: 1180px) {
+      display: block;
+      margin-bottom: 32px;
+   }
 }
 
 .cta__text {
@@ -37,8 +62,16 @@
    line-height: 1.5;
    color: $white;
    margin-bottom: 32px;
+
+   @media (max-width: 999px) {
+      max-width: 100%;
+   }
 }
 
 .cta__button {
    padding: 13px 121px;
+
+   @media (max-width: 999px) {
+      padding: 13px 80px;
+   }
 }
