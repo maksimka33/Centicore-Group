@@ -54,6 +54,7 @@
 .ready__row-list-item {
    display: flex;
    align-items: center;
+   text-align: right;
    gap: 24px;
    cursor: pointer;
 
@@ -74,6 +75,7 @@
 
    & svg {
       transform: scale(1.2);
+      flex-shrink: 0;
    }
 }
 

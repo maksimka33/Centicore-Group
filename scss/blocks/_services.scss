@@ -88,4 +88,8 @@
 
 .services__button {
    padding: 13px 35px;
+
+   @media (max-width: 374px) {
+      padding: 13px 25px;
+   }
 }

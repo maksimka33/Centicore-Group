@@ -3,6 +3,11 @@
    padding: 56px 0 124px;
    margin-top: -60px;
    border-radius: 70px 70px 0 0;
+
+   @media (max-width: 650px) {
+      padding: 36px 0 100px;
+      border-radius: 50px 50px 0 0;
+   }
 }
 
 .outstaffing__body {
@@ -19,6 +24,22 @@
 .outstaffing__wrapper {
    display: flex;
    justify-content: space-between;
+   gap: 32px;
+
+   @media (max-width: 1150px) {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   @media (max-width: 691px) {
+      gap: 12px;
+   }
+}
+
+.outstaffing__item:not(:last-child) {
+   @media (max-width: 691px) {
+      border-bottom: 2px solid #b7b7b7;
+   }
 }
 
 .outstaffing__item {
@@ -30,6 +51,10 @@
 
 .outstaffing__item-border {
    border: 1px solid #b7b7b7;
+
+   @media (max-width: 1150px) {
+      display: none;
+   }
 }
 
 .outstaffing__item-img {
@@ -59,6 +84,10 @@
 .outstaffing__item-text {
    font-size: 12px;
    line-height: 1.5;
+
+   @media (max-width: 374px) {
+      font-size: 10px;
+   }
 }
 
 .outstaffing__btn {
@@ -68,4 +97,12 @@
 .outstaffing__button {
    padding: 13px 69px;
    border: 1px solid #1f50fe;
+
+   @media (max-width: 1150px) {
+      padding: 13px 30px;
+   }
+
+   @media (max-width: 374px) {
+      padding: 13px 20px;
+   }
 }

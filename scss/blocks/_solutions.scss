@@ -4,6 +4,11 @@
    border-radius: 70px 70px 0 0;
 
    background: linear-gradient(92.49deg, #1a233b 0%, #01278e 185.36%);
+
+   @media (max-width: 650px) {
+      padding: 36px 0 100px;
+      border-radius: 50px 50px 0 0;
+   }
 }
 
 .solutions__body {
@@ -29,8 +34,8 @@
 }
 
 .solutions__item {
+   padding: 24px 40px 61px 40px;
    display: flex;
-   padding: 24px 40px;
    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03),
       0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778),
       0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222),
@@ -39,30 +44,56 @@
       0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
    border-radius: 25px;
    width: 100%;
+
+   @media (max-width: 950px) {
+      flex-direction: column;
+      padding: 16px 16px 32px 16px;
+   }
 }
 
 .solutions__item + .solutions__item {
    margin-top: -38px;
+
+   @media (max-width: 950px) {
+      margin-top: -24px;
+   }
 }
 
 .solutions__item--top {
    gap: 166px;
    background: #d8ddff;
-   height: 122px;
+
+   @media (max-width: 1150px) {
+      gap: 20px;
+      justify-content: space-between;
+   }
 }
 
 .solutions__item--middle {
-   max-width: 1160px;
+   width: calc(100% - 40px);
    gap: 236px;
    background: #e9ecff;
-   height: 122px;
+
+   @media (max-width: 1150px) {
+      gap: 20px;
+      justify-content: space-between;
+   }
 }
 
 .solutions__item--bottom {
-   max-width: 1120px;
-   gap: 236px;
+   padding: 24px 40px 50px 40px;
+   width: calc(100% - 80px);
+   gap: 338px;
    background: #ffffff;
-   height: 110px;
+
+   @media (max-width: 1150px) {
+      gap: 20px;
+      justify-content: space-between;
+   }
+
+   @media (max-width: 950px) {
+      padding: 16px 15px;
+   }
 }
 
 .solutions__item-title {
@@ -74,15 +105,35 @@
    max-width: 440px;
    font-size: 12px;
    line-height: 1.5;
+
+   @media (max-width: 1150px) {
+      max-width: 400px;
+   }
+
+   @media (max-width: 950px) {
+      max-width: 100%;
+   }
 }
 
 .solutions__btn {
    margin-top: 14px;
    text-align: right;
+
+   @media (max-width: 950px) {
+      text-align: center;
+   }
 }
 
 .solutions__button {
    padding: 16px 65px 11px;
    border: 1px solid #1f50fe;
    border-radius: 40px;
+
+   @media (max-width: 950px) {
+      padding: 16px 30px 11px;
+   }
+
+   @media (max-width: 374px) {
+      padding: 16px 20px 11px;
+   }
 }
