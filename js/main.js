@@ -1,9 +1,20 @@
 /*  ===================== SLIDER ===================== */
 
+$(document).ready(function () {});
+
 $(document).ready(function () {
    $(".partners__slider").slick({
       slidesToShow: 6,
       slidesToScroll: 2,
+      responsive: [
+         {
+            breakpoint: 1200,
+            settings: {
+               slidesToShow: 5,
+               slidesToScroll: 2,
+            },
+         },
+      ],
    });
 });
 

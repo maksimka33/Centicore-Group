@@ -147,7 +147,7 @@ body {
 }
 @media (max-width: 999px) {
   .container {
-    padding: 0 20px;
+    padding: 0 16px;
   }
 }
 
@@ -1058,6 +1058,7 @@ body {
 .cta {
   padding-bottom: 124px;
   background: linear-gradient(72.05deg, #e6efff 12.23%, #d9e1ff 50.72%, #cbd2ff 88.67%);
+  overflow-x: hidden;
 }
 
 .cta__row {
@@ -1480,7 +1481,14 @@ body {
   padding: 56px 0px 122px;
   margin-top: -60px;
   border-radius: 70px 70px 0 0;
+  overflow-x: hidden;
   background: #fbfbfb;
+}
+@media (max-width: 650px) {
+  .ready {
+    padding: 36px 0 100px;
+    border-radius: 50px 50px 0 0;
+  }
 }
 
 .ready__body {
@@ -1495,29 +1503,42 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 44px;
 }
+@media (max-width: 999px) {
+  .ready__row {
+    display: block;
+  }
+}
 
 .ready__row::after {
   position: absolute;
-  bottom: -62px;
+  bottom: -142px;
   left: calc(50% + 70px);
   content: "";
   display: block;
   width: 610px;
-  height: 520px;
+  height: 610px;
   background-image: url(./../img/ready/big-circle.svg);
-  background-size: initial;
+}
+@media (max-width: 999px) {
+  .ready__row::after {
+    display: none;
+  }
 }
 
 .ready__row::before {
   position: absolute;
-  bottom: -62px;
+  bottom: -92px;
   right: 70%;
   content: "";
   display: block;
   width: 610px;
-  height: 150px;
+  height: 190px;
   background-image: url(./../img/ready/little-circle.svg);
-  background-size: initial;
+}
+@media (max-width: 999px) {
+  .ready__row::before {
+    display: none;
+  }
 }
 
 .ready__row-list {
@@ -1526,8 +1547,13 @@ body {
   align-items: end;
   row-gap: 40px;
 }
+@media (max-width: 999px) {
+  .ready__row-list {
+    align-items: normal;
+  }
+}
 
-.ready__row-list-item {
+.ready__row-list-link {
   display: flex;
   align-items: center;
   text-align: right;
@@ -1535,25 +1561,64 @@ body {
   cursor: pointer;
   transition: all 0.2s ease-in;
 }
+@media (max-width: 999px) {
+  .ready__row-list-link {
+    max-width: 525px;
+    justify-content: end;
+    gap: 22px;
+  }
+}
+@media (max-width: 525px) {
+  .ready__row-list-link {
+    text-align: left;
+    justify-content: space-between;
+  }
+}
 
-.ready__row-list-item:not(.ready__row-list-item--acctive):hover {
+.ready__row-list-link:not(.ready__row-list-link--acctive):hover {
   font-size: 16px;
   color: #1f50fe;
   fill: #1f50fe;
 }
 
-.ready__row-list-item--acctive {
+.ready__row-list-link--acctive {
   font-weight: 700;
   font-size: 20px;
   fill: #1f50fe;
 }
-.ready__row-list-item--acctive svg {
+.ready__row-list-link--acctive svg {
   transform: scale(1.2);
   flex-shrink: 0;
 }
+@media (max-width: 999px) {
+  .ready__row-list-link--acctive svg {
+    transform: scale(1.2) rotate(90deg);
+  }
+}
+@media (max-width: 999px) {
+  .ready__row-list-link--acctive {
+    justify-content: end;
+    gap: 16px;
+    font-size: 18px;
+  }
+}
+
+.ready__row-desk {
+  display: none;
+  margin-top: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 24px;
+  border: 2px solid #1f50fe;
+  border-radius: 0px 40px 40px;
+}
+@media (max-width: 999px) {
+  .ready__row-desk {
+    display: block;
+  }
+}
 
 .ready__row-wrapper {
-  min-width: 640px;
+  width: 640px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1562,6 +1627,16 @@ body {
   border: 2px solid #1f50fe;
   border-radius: 0px 40px 40px;
   z-index: 1;
+}
+@media (max-width: 1279px) {
+  .ready__row-wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 999px) {
+  .ready__row-wrapper {
+    display: none;
+  }
 }
 
 .ready__row-wrapper-item {
@@ -1581,6 +1656,7 @@ body {
 }
 
 .partners {
+  position: relative;
   padding: 56px 0px 140px;
   margin-top: -60px;
   border-radius: 70px 70px 0 0;
@@ -1597,6 +1673,24 @@ body {
 .partners__slider {
   position: relative;
 }
+@media (max-width: 999px) {
+  .partners__slider {
+    display: none;
+  }
+}
+
+.partners__slider-tablet {
+  display: none;
+}
+@media (max-width: 999px) {
+  .partners__slider-tablet {
+    display: block;
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+    flex-wrap: wrap;
+  }
+}
 
 .partners__item-img {
   display: flex;
@@ -1607,6 +1701,18 @@ body {
   background: #ffffff;
   border-radius: 50%;
   border: 1px solid #cfcfcf;
+}
+@media (max-width: 599px) {
+  .partners__item-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 599px) {
+  .partners__item-img img {
+    transform: scale(0.8);
+  }
 }
 
 /* Ограничивающая оболочка */
