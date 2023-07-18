@@ -14,6 +14,16 @@
 .noUi-target {
    position: relative;
 }
+
+#form-item1 {
+   padding-right: 15px;
+
+   @media (max-width: 1000px) {
+      padding-right: 10px;
+      padding-left: 10px;
+   }
+}
+
 .noUi-base,
 .noUi-connects {
    width: 100%;
@@ -78,7 +88,12 @@
    border-radius: 50%;
    right: -10px;
    top: -9px;
+
+   @media (max-width: 1000px) {
+      /* right: -17px; */
+   }
 }
+
 .noUi-vertical {
    width: 18px;
 }
@@ -158,7 +173,11 @@
    /* height: 80px; */
    top: 100%;
    left: 0;
-   width: 100%;
+   width: 98%;
+
+   @media (max-width: 699px) {
+      display: none;
+   }
 }
 .noUi-value-horizontal {
    -webkit-transform: translate(-50%, 50%);
@@ -205,15 +224,29 @@
    width: 15px;
 }
 .noUi-tooltip {
-   display: block;
+   display: none;
+   height: 34px;
+   width: 28px;
+
+   background: url(./../img/shape.png);
+   background-size: cover;
+   background-position: center;
+
    position: absolute;
-   border: 1px solid #d9d9d9;
-   border-radius: 3px;
-   background: #fff;
-   color: #000;
+
+   color: #fff;
    padding: 5px;
    text-align: center;
    white-space: nowrap;
+
+   font-size: 12px;
+   font-weight: 500;
+   line-height: 1.33; /* 133.333% */
+   letter-spacing: 0.5px;
+
+   @media (max-width: 699px) {
+      display: block;
+   }
 }
 .noUi-horizontal .noUi-tooltip {
    -webkit-transform: translate(-50%, 0);

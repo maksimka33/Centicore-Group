@@ -34,6 +34,12 @@ window.addEventListener("click", function (event) {
       if (parseInt(counter.innerText) > 0) {
          counter.innerText = --counter.innerText;
       }
+
+      if (
+         event.target.closest(".counter-wrapper") &&
+         parseInt(counter.innerText) === 0
+      ) {
+      }
    }
 });
 
@@ -52,10 +58,21 @@ var arbitraryValuesForSlider = [
    "2 года",
 ];
 
+var arbitraryValuesForSlider1 = ["", "3", "6", "9", "12", "18", "24"];
+
 var format = {
    to: function (value) {
-      return arbitraryValuesForSlider[Math.round(value)];
+      var bodyWidth = $("body").width();
+
+      if (bodyWidth > 699) {
+         return arbitraryValuesForSlider[Math.round(value)];
+      }
+
+      if (bodyWidth < 699) {
+         return arbitraryValuesForSlider1[Math.round(value)];
+      }
    },
+
    from: function (value) {
       return arbitraryValuesForSlider.indexOf(value);
    },
@@ -66,6 +83,7 @@ noUiSlider.create(arbitraryValuesSlider, {
    start: [""],
    snap: true,
    connect: true,
+   tooltips: true,
    range: {
       min: 0,
       "7%": arbitraryValuesForSlider.length - 6,

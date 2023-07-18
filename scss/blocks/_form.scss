@@ -4,15 +4,27 @@
    padding: 56px 0px 180px;
    margin-top: -60px;
    border-radius: 70px 70px 0 0;
-   // background: linear-gradient(to right, #ffffff 58%, #1a233b 42%);
    background: #ffffff;
    font-size: 12px;
+
+   @media (max-width: 1149px) {
+      padding: 56px 0px 0px;
+   }
 }
 
 .form__options {
    max-width: 700px;
    margin-right: auto;
    padding-right: 35px;
+
+   @media (max-width: 1279px) {
+      max-width: 630px;
+   }
+
+   @media (max-width: 1149px) {
+      max-width: 100%;
+      padding-right: 0px;
+   }
 }
 
 .form__header {
@@ -31,6 +43,14 @@
    display: flex;
    flex-direction: column;
    gap: 24px;
+
+   @media (max-width: 1149px) {
+      margin-bottom: 60px;
+   }
+
+   @media (max-width: 699px) {
+      margin-bottom: 30px;
+   }
 }
 
 .form__group-title {
@@ -39,11 +59,22 @@
    margin-bottom: 20px;
 }
 
+.form__group-title--margin-bottom {
+   @media (max-width: 699px) {
+      margin-bottom: 55px;
+   }
+}
+
 /* ================ RADIO ================ */
 
 .radio-wraper {
    display: flex;
    gap: 40px;
+
+   @media (max-width: 699px) {
+      flex-direction: column;
+      gap: 20px;
+   }
 }
 
 .radio-item {
@@ -69,6 +100,8 @@
    border: 2px solid #00000099;
    border-radius: 50%;
    transition: border 0.2s ease-in;
+
+   flex-shrink: 0;
 }
 
 .custom__radio::before {
@@ -98,6 +131,12 @@
    display: flex;
    gap: 40px;
    align-items: center;
+
+   @media (max-width: 699px) {
+      flex-direction: column;
+      gap: 20px;
+      align-items: start;
+   }
 }
 
 .counter-wrapper {
@@ -159,12 +198,21 @@
 .checkbox-row {
    display: flex;
    gap: 56px;
+
+   @media (max-width: 699px) {
+      flex-direction: column;
+      gap: 20px;
+   }
 }
 
 .checkbox-column {
    display: flex;
    flex-direction: column;
    gap: 24px;
+
+   @media (max-width: 699px) {
+      gap: 20px;
+   }
 }
 
 .real-checkbox {
@@ -226,6 +274,12 @@
    display: flex;
    flex-direction: column;
    gap: 32px;
+
+   @media (max-width: 1149px) {
+      position: static;
+      border-radius: 0;
+      padding: 56px 40px 110px;
+   }
 }
 
 .form__total-main {
@@ -265,9 +319,25 @@
 .form__total-footer {
    margin-top: auto;
    text-align: center;
+
+   @media (max-width: 1150px) {
+      text-align: left;
+   }
 }
 
 .form__total-btn {
    padding: 16px 138px 11px;
    border-radius: 40px;
+
+   @media (max-width: 1279px) {
+      padding: 16px 100px 11px;
+   }
+
+   @media (max-width: 699px) {
+      padding: 16px 50px 11px;
+   }
+
+   @media (max-width: 374px) {
+      padding: 16px 40px 11px;
+   }
 }

@@ -5,6 +5,11 @@
    border-radius: 70px 70px 0 0;
    background: linear-gradient(270deg, #e6efff 0%, #d9e1ff 50%, #cbd2ff 100%);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+   @media (max-width: 650px) {
+      padding: 36px 0 100px;
+      border-radius: 50px 50px 0 0;
+   }
 }
 
 .partners__body {
@@ -31,6 +36,10 @@
       gap: 21px;
       flex-wrap: wrap;
    }
+
+   @media (max-width: 374px) {
+      gap: 15px;
+   }
 }
 
 .partners__item-img {
@@ -47,6 +56,11 @@
    @media (max-width: 599px) {
       width: 100px;
       height: 100px;
+   }
+
+   @media (max-width: 374px) {
+      width: 85px;
+      height: 85px;
    }
 }
 
